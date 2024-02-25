@@ -1,31 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-}
-
-body {
-  width: 580px;
-  margin: 0 auto;
-}
-
-.heading {
-  background-color: #fefdf8;
-  color: #43b9f1;
-  font-family: "Quicksand", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  text-align: center;
-  padding: 40px 50px 50px 50px;
-}
-
 .navigation {
   height: 20vh;
   background-color: #fefdf8;
@@ -39,13 +12,27 @@ body {
   color: #394066;
   font-size: 40px;
 }
-.navigation .button {
+.navigation .login-button {
   color: #394066;
   font-size: 24px;
   font-weight: 700;
   padding: 15px 40px;
   border: #394066 solid 2px;
   border-radius: 10px;
+}
+
+.heading {
+  background-color: #fefdf8;
+  color: #43b9f1;
+  font-family: "Quicksand", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px 50px 60px 50px;
+}
+
+.device-image {
+  width: 360px;
 }
 
 main {
@@ -76,7 +63,7 @@ main p {
   text-align: center;
   padding: 30px 40px 60px 40px;
 }
-main .button {
+main .signup-button {
   color: #FFFFFF;
   background-color: #394066;
   padding: 30px 70px;
@@ -84,15 +71,23 @@ main .button {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1.5px;
-  margin-bottom: 50px;
+  margin: 40px 10px 100px 10px;
 }
-
-.sub-heading {
+main section .sub-heading {
   font-size: 36px;
   font-weight: 700;
 }
 
-.sign-up {
+.image {
+  width: 40%;
+}
+
+img {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.button {
   color: #FFFFFF;
   background-color: #394066;
   padding: 30px 70px;
@@ -100,11 +95,38 @@ main .button {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
-  margin: 40px 10px 100px 10px;
+  margin: 10px 50px 50px 50px;
 }
 
-.device-image {
-  width: 360px;
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  text-align: center;
+  font-size: 28px;
+  background-color: #fefcdd;
+}
+footer a {
+  color: #394066;
+  padding: 20px;
+  font-weight: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+body {
+  width: 580px;
+  margin: 0 auto;
 }
 
 .row {
@@ -144,15 +166,6 @@ main .button {
   text-align: left;
 }
 
-.image {
-  width: 40%;
-}
-
-img {
-  width: 100%;
-  padding: 0 20px;
-}
-
 .bold {
   font-weight: 700;
 }
@@ -160,18 +173,4 @@ img {
 .thin {
   font-weight: 300;
   font-style: italic;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  text-align: center;
-  font-size: 28px;
-  background-color: #fefcdd;
-}
-footer a {
-  color: #394066;
-  padding: 20px;
-  font-weight: 600;
 }/*# sourceMappingURL=styles.css.map */

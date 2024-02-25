@@ -1,0 +1,124 @@
+@use "./_variables" as *;
+
+.navigation {
+	height: 20vh;
+	background-color: $color-background-main;
+	padding: 0 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.logo {
+		font-weight: 700;
+		color: $color-primary;
+		font-size: 40px;
+	}
+
+	.login-button {
+		color: $color-primary;
+		font-size: 24px;
+		font-weight: 700;
+		padding: 15px 40px;
+		border: $color-primary solid 2px;
+		border-radius: 10px;
+	}
+}
+
+.heading {
+	background-color: $color-background-main;
+	color: $color-primary-light;
+	font-family: $heading-font;
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	padding: 20px 50px 60px 50px;
+}
+
+.device-image {
+	width: 360px;
+}
+
+main {
+	background-color: $color-background-main;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+	h2 {
+		color: $color-primary;
+		text-align: center;
+		padding: 70px 40px 30px 40px;
+		font-size: 34px;
+		line-height: 46px;
+	}
+
+	h3 {
+		color: $color-primary-light;
+		font-size: 30px;
+		line-height: 38px;
+		text-align: center;
+		padding: 30px 40px;
+	}
+
+	p {
+		color: $color-primary;
+		font-size: 18px;
+		line-height: 28px;
+		text-align: center;
+		padding: 30px 40px 60px 40px;
+	}
+
+	.signup-button {
+		color: #FFFFFF;
+		background-color: $color-primary;
+		padding: 30px 70px;
+		border-radius: 10px;
+		font-size: 20px;
+		font-weight: 600;
+		letter-spacing: 1.5px;
+		margin: 40px 10px 100px 10px;
+	}
+
+	section {
+		.sub-heading {
+			font-size: 36px;
+			font-weight: 700;
+		}
+	}
+}
+
+.image {
+	width: 40%;
+}
+
+img {
+	width: 100%;
+	padding: 0 20px;
+}
+
+.button {
+	color: #FFFFFF;
+	background-color: $color-primary;
+	padding: 30px 70px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 10px 50px 50px 50px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	text-align: center;
+	font-size: 28px;
+	background-color: $color-background-footer;
+	
+	a {
+		color: $color-primary;
+		padding: 20px;
+		font-weight: 600;
+	}
+}
