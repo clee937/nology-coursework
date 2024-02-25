@@ -11,6 +11,11 @@ a:visited {
   text-decoration: none;
 }
 
+body {
+  width: 580px;
+  margin: 0 auto;
+}
+
 .heading {
   background-color: #fefdf8;
   color: #43b9f1;
@@ -18,7 +23,7 @@ a:visited {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
-  padding-bottom: 50px;
+  padding: 40px 50px 50px 50px;
 }
 
 .navigation {
@@ -37,6 +42,7 @@ a:visited {
 .navigation .button {
   color: #394066;
   font-size: 24px;
+  font-weight: 700;
   padding: 15px 40px;
   border: #394066 solid 2px;
   border-radius: 10px;
@@ -52,7 +58,7 @@ main {
 main h2 {
   color: #394066;
   text-align: center;
-  padding: 60px 10px 30px 10px;
+  padding: 70px 40px 30px 40px;
   font-size: 34px;
   line-height: 46px;
 }
@@ -61,14 +67,14 @@ main h3 {
   font-size: 30px;
   line-height: 38px;
   text-align: center;
-  padding: 30px 10px;
+  padding: 30px 40px;
 }
 main p {
   color: #394066;
   font-size: 18px;
   line-height: 28px;
   text-align: center;
-  padding: 30px 10px 60px 10px;
+  padding: 30px 40px 60px 40px;
 }
 main .button {
   color: #FFFFFF;
@@ -93,7 +99,7 @@ main .button {
   border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   margin: 40px 10px 100px 10px;
 }
 
@@ -102,19 +108,49 @@ main .button {
 }
 
 .row {
-  width: 600px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+.row p {
+  padding: 30px 30px;
+}
+
 .text {
-  max-width: 300px;
+  width: 60%;
+}
+
+.row-1-text {
+  width: 70%;
+}
+
+.row-1-image {
+  width: 30%;
+}
+
+.row-2-text {
+  width: 58%;
+}
+
+.row-2-image {
+  width: 42%;
 }
 
 .text p {
   font-size: 24px;
   line-height: 36px;
+  text-align: left;
+}
+
+.image {
+  width: 40%;
+}
+
+img {
+  width: 100%;
+  padding: 0 20px;
 }
 
 .bold {
@@ -123,18 +159,19 @@ main .button {
 
 .thin {
   font-weight: 300;
+  font-style: italic;
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 30px;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   background-color: #fefcdd;
 }
 footer a {
   color: #394066;
   padding: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }/*# sourceMappingURL=styles.css.map */
