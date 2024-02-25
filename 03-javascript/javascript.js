@@ -17,16 +17,17 @@
 
 const isNumberPositive = (num) => {
 
-	if(typeof num !== 'number') {
-		return 'Not a number. Please provide a number.';
-	}
+	// if(typeof num !== 'number') {
+	// 	return 'Not a number. Please provide a number.';
+	// }
 
 	return num >= 0 ? true : false;
 }
 
 console.log(isNumberPositive(-1)); // returns false
 console.log(isNumberPositive(0.10)); // returns true
-console.log(isNumberPositive('hi')); // returns 'Not a number. Please provide a number.'
+// console.log(isNumberPositive('hi')); 
+// returns 'Not a number. Please provide a number.'
 
 // 2. Write a function that takes a number of days and converts it into an age.
 
@@ -70,5 +71,27 @@ console.log(getLargestNumber(6,2,3)); // returns 6
 
 // 4.Write a function that takes an array of names and returns the last name from the array of names.
 
-console.log(getLastName(["Charlie","Rob","Andy"]));
-console.log(getLastName(["Ash","Stu"]));
+const getLastName = (array) => {
+	return array[array.length-1];
+}
+
+console.log(getLastName(["Charlie","Rob","Andy"])); // returns “Andy”
+console.log(getLastName(["Ash","Stu"])); // returns "Stu"
+
+// 5. Write a function that takes an array of numbers and returns true if all of the numbers are positive. It should return false if there are one or more negative numbers in the array.
+
+const allNumbersPositive = (array) => {
+
+	for (let i = 0; i < array.length; i++) {
+
+		if (array[i] < 0) {
+			return false
+		}	
+	}
+	return true;
+}
+
+
+console.log(allNumbersPositive([2, 4, 5])); // returns true
+console.log(allNumbersPositive([-5, 4, 6])); // returns false
+
