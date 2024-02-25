@@ -1,5 +1,6 @@
 @use "./_variables" as *;
 @use "./_components";
+@use "./_layouts";
 
 * {
 	margin: 0;
@@ -11,42 +12,6 @@
 a:link,
 a:visited {
 	text-decoration: none;
-}
-
-body {
-	width: 580px;
-	margin: 0 auto;
-}
-
-.row {
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.row p {
-	padding: 30px 30px;
-}
-
-.text {
-	width: 60%;
-}
-
-.row-1-text {
-	width: 70%;
-}
-
-.row-1-image {
-	width: 30%;
-}
-
-.row-2-text {
-	width: 58%;
-}
-
-.row-2-image {
-	width: 42%;
 }
 
 .text p {

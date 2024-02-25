@@ -92,9 +92,14 @@ main {
 	width: 40%;
 }
 
-img {
+.row-1 img, .row-3 img {
 	width: 100%;
-	padding: 0 20px;
+	padding: 0 20px 0 0;
+}
+
+.row-2 img, .row-4 img {
+	width: 100%;
+	padding: 0 0 0 20px;
 }
 
 .button {
