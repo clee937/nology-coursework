@@ -1,6 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.heading {
+  background-color: #fefdf8;
+  color: #43b9f1;
+  font-family: "Quicksand", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.navigation {
+  height: 20vh;
+  background-color: #fefdf8;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation .logo {
+  font-weight: 700;
+  color: #394066;
+  font-size: 40px;
+}
+.navigation .button {
+  color: #394066;
+  font-size: 24px;
+  padding: 15px 40px;
+  border: #394066 solid 2px;
+  border-radius: 10px;
+}
+
+main {
+  background-color: #fefdf8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main h2 {
+  color: #394066;
+  text-align: center;
+  padding: 60px 10px 30px 10px;
+  font-size: 34px;
+  line-height: 46px;
+}
+main h3 {
+  color: #43b9f1;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  padding: 30px 10px;
+}
+main p {
+  color: #394066;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  padding: 30px 10px 60px 10px;
+}
+main .button {
+  color: #FFFFFF;
+  background-color: #394066;
+  padding: 30px 70px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 50px;
+}
+
+.sub-heading {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.sign-up {
+  color: #FFFFFF;
+  background-color: #394066;
+  padding: 30px 70px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 40px 10px 100px 10px;
+}
+
+.device-image {
+  width: 360px;
+}
+
+.row {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text {
+  max-width: 300px;
+}
+
+.text p {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+  font-size: 36px;
+  background-color: #fefcdd;
+}
+footer a {
+  color: #394066;
+  padding: 20px;
+  font-weight: 500;
 }/*# sourceMappingURL=styles.css.map */
