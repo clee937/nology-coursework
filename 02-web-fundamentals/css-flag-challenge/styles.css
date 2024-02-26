@@ -25,3 +25,17 @@
 .bottom {
   background-color: #ffce00;
 }
+
+.flag-1:hover {
+  .top {
+    background-color: #ee2939;
+  }
+
+  .middle {
+    background-color: #f7f7f7;
+  }
+
+  .bottom {
+    background-color: #466d4d;
+  }
+}
