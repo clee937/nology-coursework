@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 
+/* Flag 1 */
+
 .flag-1 {
-  margin-top: 100px;
+  margin: 60px auto;
 }
 
-.flag-section {
+.flag-1 .flag-section {
   width: 300px;
   height: 60px;
   margin: 0 auto;
@@ -18,13 +20,15 @@
   background-color: #000000;
 }
 
-.middle {
+.flag-1 .middle {
   background-color: #de0000;
 }
 
 .bottom {
   background-color: #ffce00;
 }
+
+/* Hover effect */
 
 .flag-1:hover {
   .top {
@@ -37,5 +41,47 @@
 
   .bottom {
     background-color: #466d4d;
+  }
+}
+
+/* Flag 2 */
+
+.flag-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.flag-2 .flag-section {
+  height: 160px;
+  width: 100px;
+}
+
+.left {
+  background-color: #002496;
+}
+
+.flag-2 .middle {
+  background-color: #ffffff;
+}
+
+.right {
+  background-color: #ee2939;
+}
+
+/* Hover effect */
+
+.flag-2:hover {
+  .left {
+    background-color: #16965f;
+  }
+
+  .middle {
+    background-color: #f7f7f7;
+  }
+
+  .right {
+    background-color: #f7843d;
   }
 }
