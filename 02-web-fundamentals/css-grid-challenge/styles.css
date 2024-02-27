@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +11,10 @@ body {
   grid-template-rows: 1fr 1fr 4.5fr 1fr;
   gap: 10px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.5rem;
   text-align: center;
-  font-family: arial, sans-serif;
-  background-color: header;
+  font-family: "Outfit", arial, sans-serif;
   background-color: #f64488;
   height: 100vh;
 }
@@ -37,7 +38,7 @@ aside {
 }
 
 main {
-  background-color: #c6ddf0;
+  background-color: #d6d6d6;
   display: flex;
   justify-content: center;
   align-items: center;
