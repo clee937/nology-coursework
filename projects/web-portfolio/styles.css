@@ -1,15 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.nav {
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .nav {
+  .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,27 +23,28 @@
     font-size: 18px;
     font-family: arial, sans-serif;
   }
-  .nav__logo {
+  .navigation__logo {
     color: #121212;
+    font-weight: 700;
     text-decoration: none;
-    text-shadow: 5px 5px 5px rgb(219, 216, 216);
+    text-shadow: 5px 5px 5px rgb(188, 188, 188);
   }
-  .nav__link-container {
+  .navigation__link-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .nav__link-container__link {
+  .navigation__link-container .navigation__link {
     color: #121212;
     text-decoration: none;
     text-shadow: 5px 5px 5px rgb(219, 216, 216);
     margin: 0 20px 0 20px;
     cursor: pointer;
   }
-  .nav__link-container__link--home {
+  .navigation__link-container .navigation__link--home {
     margin-left: 0;
   }
-  .nav__link-container__link--getintouch {
+  .navigation__link-container .navigation__link--getintouch {
     margin-right: 0;
     border: 1px solid #121212;
     border-radius: 7px;

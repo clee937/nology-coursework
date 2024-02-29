@@ -7,12 +7,17 @@
   box-sizing: border-box;
 }
 
-.nav {
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .nav {
+  .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,17 +27,17 @@
 
     &__logo {
       color: $primary-color;
+      font-weight: 700;
       text-decoration: none;
-      text-shadow: 5px 5px 5px rgb(219, 216, 216);
+      text-shadow: 5px 5px 5px rgb(188, 188, 188);
     }
 
     &__link-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // border: 1px solid red;
 
-      &__link {
+      .navigation__link {
         color: $primary-color;
         text-decoration: none;
         text-shadow: 5px 5px 5px rgb(219, 216, 216);
