@@ -1,5 +1,4 @@
-@use "./_variables" as *;
-@use "./_fonts";
+@use "./scss-modules/_variables" as *;
 @use "./scss-modules/components/_nav-bar";
 
 * {
