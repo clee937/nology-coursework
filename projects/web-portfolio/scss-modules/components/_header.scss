@@ -13,8 +13,8 @@
     }
 
     .header__heading {
-      font-size: 40px;
-      line-height: 52px;
+      font-size: 46px;
+      line-height: 54px;
       padding: 20px 20px 20px 0;
       text-shadow: 1.5px 1.5px 1.5px rgb(188, 188, 188);
     }
@@ -29,6 +29,12 @@
   .header {
     display: flex;
     align-items: center;
+    padding: 20px;
+
+    .header__heading {
+      font-weight: 600;
+      line-height: 60px;
+    }
 
     &__image-container {
       display: block;

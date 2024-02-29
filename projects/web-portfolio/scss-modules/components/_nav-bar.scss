@@ -10,14 +10,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
+    font-size: 20px;
     font-family: $primary-font;
 
     &__logo {
       color: $primary-color;
       font-weight: 700;
       text-decoration: none;
-      text-shadow: 5px 5px 5px rgb(188, 188, 188);
+      text-shadow: 2px 2px 2px rgb(188, 188, 188);
     }
 
     &__link-container {
