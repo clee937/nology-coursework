@@ -10,9 +10,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px;
     font-size: 18px;
-    font-family: "Inter", arial, sans-serif;
+    font-family: $primary-font;
 
     &__logo {
       color: $primary-color;

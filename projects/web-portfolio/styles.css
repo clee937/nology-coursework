@@ -8,7 +8,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px;
     font-size: 18px;
     font-family: "Inter", arial, sans-serif;
   }
@@ -42,6 +41,25 @@
     box-shadow: 0 5px 5px 0 rgba(29, 29, 29, 0.2);
   }
 }
+.header {
+  font-family: "Inter", arial, sans-serif;
+}
+.header__intro {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 20px 20px 0;
+  text-shadow: 2px 2px 2px rgb(188, 188, 188);
+}
+.header__heading {
+  font-size: 40px;
+  line-height: 52px;
+  padding: 20px 20px 20px 0;
+  text-shadow: 2px 2px 2px rgb(188, 188, 188);
+}
+.header__image-container {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -50,5 +68,12 @@
 
 body {
   max-width: 1200px;
+  padding: 30px 40px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 30px 60px;
+  }
 }/*# sourceMappingURL=styles.css.map */
