@@ -4,21 +4,38 @@
 .header {
   font-family: $primary-font;
 
-  &__intro {
-    font-size: 20px;
-    font-weight: 500;
-    padding: 20px 20px 20px 0;
-    text-shadow: 2px 2px 2px rgb(188, 188, 188);
-  }
+  &__text-container {
+    .header__intro {
+      font-size: 20px;
+      font-weight: 500;
+      padding: 20px 20px 20px 0;
+      text-shadow: 1.5px 1.5px 1.5px rgb(188, 188, 188);
+    }
 
-  &__heading {
-    font-size: 40px;
-    line-height: 52px;
-    padding: 20px 20px 20px 0;
-    text-shadow: 2px 2px 2px rgb(188, 188, 188);
+    .header__heading {
+      font-size: 40px;
+      line-height: 52px;
+      padding: 20px 20px 20px 0;
+      text-shadow: 1.5px 1.5px 1.5px rgb(188, 188, 188);
+    }
   }
 
   &__image-container {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+
+    &__image-container {
+      display: block;
+
+      .header__image {
+        width: 360px;
+      }
+    }
   }
 }

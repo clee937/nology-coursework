@@ -44,22 +44,34 @@
 .header {
   font-family: "Inter", arial, sans-serif;
 }
-.header__intro {
+.header__text-container .header__intro {
   font-size: 20px;
   font-weight: 500;
   padding: 20px 20px 20px 0;
-  text-shadow: 2px 2px 2px rgb(188, 188, 188);
+  text-shadow: 1.5px 1.5px 1.5px rgb(188, 188, 188);
 }
-.header__heading {
+.header__text-container .header__heading {
   font-size: 40px;
   line-height: 52px;
   padding: 20px 20px 20px 0;
-  text-shadow: 2px 2px 2px rgb(188, 188, 188);
+  text-shadow: 1.5px 1.5px 1.5px rgb(188, 188, 188);
 }
 .header__image-container {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  .header__image-container {
+    display: block;
+  }
+  .header__image-container .header__image {
+    width: 360px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
