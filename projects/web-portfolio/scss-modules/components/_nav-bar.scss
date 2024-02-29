@@ -1,0 +1,50 @@
+@use "../../_variables" as *;
+
+.navigation {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    font-size: 18px;
+    font-family: arial, sans-serif;
+
+    &__logo {
+      color: $primary-color;
+      font-weight: 700;
+      text-decoration: none;
+      text-shadow: 5px 5px 5px rgb(188, 188, 188);
+    }
+
+    &__link-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .navigation__link {
+        color: $primary-color;
+        text-decoration: none;
+        text-shadow: 5px 5px 5px rgb(219, 216, 216);
+        margin: 0 20px 0 20px;
+        cursor: pointer;
+
+        &--home {
+          margin-left: 0;
+        }
+
+        &--getintouch {
+          margin-right: 0;
+          border: 1px solid $primary-color;
+          border-radius: 7px;
+          padding: 10px 20px 10px 20px;
+          font-weight: 700;
+          box-shadow: 0 5px 5px 0 #1d1d1d33;
+        }
+      }
+    }
+  }
+}

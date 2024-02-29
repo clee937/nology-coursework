@@ -1,15 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .navigation {
   display: none;
 }
@@ -52,4 +41,14 @@ body {
     font-weight: 700;
     box-shadow: 0 5px 5px 0 rgba(29, 29, 29, 0.2);
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
 }/*# sourceMappingURL=styles.css.map */
