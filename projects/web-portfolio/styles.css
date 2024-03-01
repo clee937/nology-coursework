@@ -43,6 +43,7 @@
 }
 .header {
   font-family: "Inter", arial, sans-serif;
+  padding: 40px 20px 0 20px;
 }
 .header__text-container .header__intro {
   font-size: 20px;
@@ -60,6 +61,11 @@
   display: none;
 }
 
+@media screen and (min-width: 370px) {
+  .header {
+    padding: 40px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header {
     display: flex;
@@ -75,53 +81,65 @@
   }
   .header__image-container .header__image {
     width: 360px;
+    transition: all 0.5s ease-in;
+  }
+  .header__image-container .header__image:hover {
+    transform: scale(-1, 0.9);
   }
 }
-.about-me .about-me__heading {
+.about-me {
+  padding: 0 20px;
+}
+.about-me__heading {
   font-family: "Inter", arial, sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
   text-align: center;
   padding: 20px;
   color: #121212;
 }
-.about-me .about-me__container .about-me__image-container {
+.about-me__container .about-me__image-container {
   max-width: 260px;
   margin: 0 auto;
   padding: 20px 0;
 }
-.about-me .about-me__container .about-me__image-container .about-me__image {
+.about-me__container .about-me__image-container .about-me__image {
   width: 100%;
 }
-.about-me .about-me__container .about-me__text-container .about-me__desktop-heading {
+.about-me__container .about-me__text-container .about-me__desktop-heading {
   display: none;
 }
-.about-me .about-me__container .about-me__text-container .about-me__paragraph {
+.about-me__container .about-me__text-container .about-me__paragraph {
   font-family: "Inter", arial, sans-serif;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.75rem;
   text-align: left;
   padding: 10px 0;
   color: #121212;
 }
 
+@media screen and (min-width: 370px) {
+  .about-me {
+    padding: 0 40px;
+  }
+}
 @media screen and (min-width: 768px) {
-  .about-me .about-me__heading {
+  .about-me__heading {
     display: none;
   }
-  .about-me .about-me__container {
+  .about-me__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .about-me .about-me__container .about-me__image-container {
+  .about-me__container .about-me__image-container {
     margin: 0;
   }
-  .about-me .about-me__container .about-me__text-container {
+  .about-me__container .about-me__text-container {
     width: 68%;
     margin-left: 60px;
   }
-  .about-me .about-me__container .about-me__text-container .about-me__desktop-heading {
+  .about-me__container .about-me__text-container .about-me__desktop-heading {
     display: block;
     font-family: "Inter", arial, sans-serif;
     font-size: 28px;
@@ -129,6 +147,58 @@
     text-align: left;
     padding-bottom: 20px;
     color: #121212;
+  }
+}
+.technical-skills .technical-skills__logo-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3px;
+}
+.technical-skills .technical-skills__logo-text {
+  font-family: "Inter", arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  text-align: center;
+  padding: 10px 0;
+  color: #121212;
+}
+.technical-skills__logo-and-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+}
+.technical-skills .technical-skills__logo-text {
+  padding: 10px;
+}
+
+@media screen and (min-width: 370px) {
+  .technical-skills {
+    padding: 0 40px;
+  }
+  .technical-skills .technical-skills__logo-container {
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .technical-skills {
+    padding: 0 120px;
+  }
+  .technical-skills .technical-skills__logo-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 0 120px;
+  }
+  .technical-skills .technical-skills__logo-container__logo-and-text-container {
+    padding-top: 20px;
+    margin: 10px;
+  }
+  .technical-skills .technical-skills__logo-container .technical-skills__logo-text {
+    padding: 15px;
   }
 }
 * {
@@ -140,12 +210,37 @@
 body {
   max-width: 1200px;
   min-width: 300px;
-  padding: 30px 40px;
   margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.technical-skills {
+  padding: 0 15px;
+}
+.technical-skills__heading {
+  font-family: "Inter", arial, sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+  color: #121212;
+}
+.technical-skills__paragraph {
+  font-family: "Inter", arial, sans-serif;
+  line-height: 1.75rem;
+  text-align: center;
+  padding: 10px 20px;
+  color: #121212;
 }
 
 @media screen and (min-width: 768px) {
   body {
     padding: 30px 60px;
+  }
+  .technical-skills__heading {
+    font-size: 28px;
+  }
+  .technical-skills__paragraph {
+    padding: 10px 40px;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,64 @@
+@use "../_variables" as *;
+@use "../_fonts";
+
+.technical-skills {
+  .technical-skills__logo-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+  }
+
+  .technical-skills__logo-text {
+    font-family: $primary-font;
+    font-size: $mobile-paragraph-font-size;
+    line-height: $mobile-paragraph-line-height;
+    text-align: center;
+    padding: 10px 0;
+    color: $primary-color;
+  }
+
+  &__logo-and-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+  }
+
+  .technical-skills__logo-text {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 370px) {
+  .technical-skills {
+    padding: 0 40px;
+    .technical-skills__logo-container {
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .technical-skills {
+    padding: 0 120px;
+
+    .technical-skills__logo-container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      align-items: baseline;
+      padding: 0 120px;
+
+      &__logo-and-text-container {
+        padding-top: 20px;
+        margin: 10px;
+      }
+
+      .technical-skills__logo-text {
+        padding: 15px;
+      }
+    }
+  }
+}
