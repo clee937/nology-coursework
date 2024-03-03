@@ -1,0 +1,61 @@
+@use "./abstracts/variables" as *;
+
+@use "./components/_navigation";
+@use "./components/_header";
+@use "./components/_about-me";
+@use "./components/_logo-panel";
+@use "./components/_project-card";
+
+@use "./layouts/_my-projects";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  min-width: 300px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.technical-skills {
+  padding: 0 15px;
+
+  &__heading {
+    font-family: $primary-font;
+    font-size: $mobile-sub-heading-font-size;
+
+    font-weight: $sub-heading-font-weight;
+    text-align: center;
+    padding: 20px;
+    color: $primary-color;
+  }
+
+  &__paragraph {
+    font-family: $primary-font;
+    line-height: $mobile-paragraph-line-height;
+    text-align: center;
+    padding: 10px 20px;
+    color: $primary-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 30px 60px;
+  }
+
+  .technical-skills {
+    &__heading {
+      font-size: $desktop-sub-heading-font-size;
+      padding: 20px 0;
+    }
+
+    &__paragraph {
+      padding: 10px 40px;
+    }
+  }
+}

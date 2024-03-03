@@ -1,0 +1,77 @@
+@use "../abstracts/_variables" as *;
+@use "./../base/_typography";
+
+.projects__card {
+  background-color: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  font-family: $primary-font;
+  color: $primary-color;
+  font-size: 1rem;
+  margin: 30px 20px;
+
+  .projects__image {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .projects__body {
+    padding-top: 20px;
+    background-color: inherit;
+  }
+
+  .projects__language {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+
+  .projects__card-heading {
+    font-size: 1.25rem;
+  }
+
+  .projects__description {
+    margin: 25px 0;
+  }
+
+  .projects__buttons {
+    margin-top: 20px;
+  }
+
+  .projects__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: $primary-color;
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    border: $primary-color 1px solid;
+    border-radius: 7px;
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &--preview {
+      margin-left: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: 340px) {
+  .projects-card {
+    width: 310px;
+  }
+}
